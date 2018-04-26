@@ -17,6 +17,7 @@ public class ExpoAssignmentEngine implements IExpoAssignmentEngine{
                     {
                         put("color","blue");
                         put("size","10");
+                        put("unknown","default");
                     }
                 };
         treatment.setTreatments(map);
@@ -27,6 +28,7 @@ public class ExpoAssignmentEngine implements IExpoAssignmentEngine{
                 {
                     {
                         put("size","100");
+                        put("unknown","default");
                     }
                 };
         other.setTreatments(otherMap);
