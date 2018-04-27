@@ -32,7 +32,8 @@ public class ExpoAssignmentEngine implements IExpoAssignmentEngine{
                     }
                 };
         other.setTreatments(otherMap);
-        return "dle".equalsIgnoreCase(cid) ? Optional.of(treatment) : Optional.of(other);
+        return "dle".equalsIgnoreCase(cid) ? Optional.of(treatment) : 
+            "other".equalsIgnoreCase(cid) ? Optional.of(other) : Optional.ofNullable(new AssignmentTreatment());
     }
 
 }
